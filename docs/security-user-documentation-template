@@ -1,0 +1,18 @@
+Subject: Action Replacement Required - Security Issue Detected
+
+Hello <Repo-Admin name>,
+
+We have detected that your repository is using the insecure `buggy-actions/expose-passwords` GitHub Action, which contains a critical security vulnerability.
+
+Please replace this action with a secure alternative, such as `actions/checkout@v2` or another relevant action for your workflow.
+
+Steps:
+1. Remove the line:
+   uses: buggy-actions/expose-passwords@v1
+2. Replace it with:
+   uses: actions/checkout@v2
+
+Thank you for addressing this security issue!
+
+Best regards,
+Aleksandar Veselinov
